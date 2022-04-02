@@ -14,7 +14,10 @@ bot.onText(/\/start/, msg => {
                     },
                     {
                         text: "Techniques 💻"
-                    },
+                    }
+                ],
+                [
+                    
                     {
                         text: "Projects 💼"
                     },
@@ -22,6 +25,7 @@ bot.onText(/\/start/, msg => {
                         text: "Contact 📞"
                     }
                 ]
+                
             ],
             resize_keyboard: true
         })
