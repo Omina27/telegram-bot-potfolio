@@ -43,7 +43,7 @@ bot.on('message', msg => {
     if(msg.text === 'About me 👩🏻‍🏫'){
         bot.sendPhoto(chatId, './images/resume.jpg', {
             caption: `
-            <i>"Fullname: Abdusattorova Omina\n Address: Sergeli district \n Job: Junior fullstack developer \n Study place: Najot ta'lim \n Purpose: Gaining experience in building, developing, and managing websites. "</i>
+            <i>Fullname: Abdusattorova Omina\n Address: Sergeli district \n Job: Junior fullstack developer \n Study place: Najot ta'lim \n Purpose: Gaining experience in building, developing, and managing websites. </i>
             `,
             parse_mode: "HTML",
             
@@ -68,21 +68,21 @@ bot.on('message', msg => {
                             text: "Restaurants"
                         },
                         {
-                            text: "Todo list"
+                            text: "Restaurant admin"
                         }
                     ],
                    
                     [
                         {
-                            text: "Farangeyt"
+                            text: "Credit house"
                         },
                         {
-                            text: "Which is fast"
+                            text: "Credit house admin"
                         }
                     ],
                     [
                         {
-                            text: "Twitter"
+                            text: "Chat"
                         },
                         {
                             text: "Coffee"
@@ -181,10 +181,7 @@ bot.on('message', msg => {
     if(msg.text == "Restaurants") {
         bot.sendPhoto(chatId, './images/restaurant.jpg', {
             caption: `
-            <i>Programming languages
-            Backend: Graphql
-            Database: Postgresql
-            Frontend: React js</i>
+            <i>Programming languages \n Backend: Graphql \n Database: Postgresql \n Frontend: React js</i>
             `,
             parse_mode: "HTML", 
             reply_markup: {
@@ -192,7 +189,7 @@ bot.on('message', msg => {
                     [
                         {
                             text: "Go to link",
-                            url: "https://carusel.netlify.app/",
+                            url: "https://restaurant-client-app.netlify.app/",
                             callback_data: "link_inline"
                         }
                     ]
@@ -201,10 +198,10 @@ bot.on('message', msg => {
         })
     }
 
-    if(msg.text == "Todo list") {
-        bot.sendPhoto(chatId, './images/todo.jpg', {
+    if(msg.text == "Restaurant admin") {
+        bot.sendPhoto(chatId, './images/res-admin.jpg', {
             caption: `
-            <i>Todo list was made with html, css, js</i>
+            <i>Programming languages \n Backend: Graphql \n Database: Postgresql \n Frontend: React js</i>
             `,
             parse_mode: "HTML", 
             reply_markup: {
@@ -212,7 +209,7 @@ bot.on('message', msg => {
                     [
                         {
                             text: "Go to link",
-                            url: "https://supper-to-do.netlify.app/",
+                            url: "https://restaurant-admin-app.netlify.app/",
                             callback_data: "link_inline"
                         }
                     ]
@@ -221,10 +218,10 @@ bot.on('message', msg => {
         })
     }
 
-    if(msg.text == "Farangeyt") {
-        bot.sendPhoto(chatId, './images/farangeyt.jpg', {
+    if(msg.text == "Credit house") {
+        bot.sendPhoto(chatId, './images/credit-house.jpg', {
             caption: `
-            <i>Farangeyt app was made with html, css, js</i>
+            <i>Programming languages \n Backend: Express - Rest API \n Database: Postgresql \n Frontend: React js</i>
             `,
             parse_mode: "HTML", 
             reply_markup: {
@@ -232,7 +229,7 @@ bot.on('message', msg => {
                     [
                         {
                             text: "Go to link",
-                            url: "https://farangeyt.netlify.app/",
+                            url: "https://credit-house.netlify.app",
                             callback_data: "link_inline"
                         }
                     ]
@@ -241,10 +238,10 @@ bot.on('message', msg => {
         })
     }
 
-    if(msg.text == "Which is fast") {
-        bot.sendPhoto(chatId, './images/which-is-fast.jpg', {
+    if(msg.text == "Credit house admin") {
+        bot.sendPhoto(chatId, './images/credit-admin.jpg', {
             caption: `
-            <i>Race app was made with html, css, js</i>
+            <i>Programming languages \n Backend: Express - Rest API \n Database: Postgresql \n Frontend: React js</i>
             `,
             parse_mode: "HTML", 
             reply_markup: {
@@ -252,7 +249,7 @@ bot.on('message', msg => {
                     [
                         {
                             text: "Go to link",
-                            url: "https://kim-birinchi-boradi-1.netlify.app/",
+                            url: "https://credit-house-admin.netlify.app",
                             callback_data: "link_inline"
                         }
                     ]
@@ -261,10 +258,11 @@ bot.on('message', msg => {
         })
     }
 
-    if(msg.text == "Twitter") {
-        bot.sendPhoto(chatId, './images/twitter.jpg', {
+    if(msg.text == "Chat") {
+        bot.sendPhoto(chatId, './images/chat.jpg', {
             caption: `
-            <i>Twitter app was made with React.jsx</i>
+            <i>Server - side application: \n Backend: Express, Socket.io \n Front: Template engines
+            </i>
             `,
             parse_mode: "HTML", 
             reply_markup: {
@@ -272,7 +270,7 @@ bot.on('message', msg => {
                     [
                         {
                             text: "Go to link",
-                            url: "https://twitter-react-login.netlify.app/",
+                            url: "https://telegram-new.herokuapp.com/",
                             callback_data: "link_inline"
                         }
                     ]
