@@ -1,5 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api')
-
+const express = require('express')
+const app = express()
+const PORT = process.env.PORT || 6000
 const bot = new TelegramBot('5158770198:AAF9L6hQ7nFIRmAfxdXkPd1XUqEkrWTsskg', {
     polling: true
 })
@@ -415,4 +417,4 @@ bot.on('callback_query', msg => {
 
 
 
-
+app.listen(PORT, console.log(PORT))
