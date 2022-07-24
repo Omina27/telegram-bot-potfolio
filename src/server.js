@@ -41,7 +41,7 @@ bot.on('message', msg => {
     ///about
 
     if(msg.text === 'About me 👩🏻‍🏫'){
-        bot.sendPhoto(chatId, './images/me.jpg', {
+        bot.sendPhoto(chatId, './images/resume.jpg', {
             caption: `
             <i>"Fullname: Abdusattorova Omina\n Address: Sergeli district \n Job: Junior fullstack developer \n Study place: Najot ta'lim \n Purpose: Gaining experience in building, developing, and managing websites. "</i>
             `,
@@ -51,9 +51,9 @@ bot.on('message', msg => {
     }
 
     if (msg.text === "Techniques 💻") {
-        bot.sendPhoto(chatId, './images/web-develop.png', {
+        bot.sendPhoto(chatId, './images/languages.jpg', {
             caption: `
-            <i>HTML, CSS, Bootstrap, Javascript, React.js, Git, \n Node.js, Express,js, HTTP, Telegram-bot</i>
+            <i>Postgresql, MongoDB, React js, Git, \n Node js, Express, Graphql, Telegram-bot</i>
             `,
             parse_mode:'HTML'
         })
@@ -65,7 +65,7 @@ bot.on('message', msg => {
                 keyboard: [
                     [
                         {
-                            text: "Carusel"
+                            text: "Restaurants"
                         },
                         {
                             text: "Todo list"
@@ -178,10 +178,13 @@ bot.on('message', msg => {
         })
     }
 
-    if(msg.text == "Carusel") {
-        bot.sendPhoto(chatId, './images/carusel.jpg', {
+    if(msg.text == "Restaurants") {
+        bot.sendPhoto(chatId, './images/restaurant.jpg', {
             caption: `
-            <i>Carusel was made with html, css, js</i>
+            <i>Programming languages
+            Backend: Graphql
+            Database: Postgresql
+            Frontend: React js</i>
             `,
             parse_mode: "HTML", 
             reply_markup: {
